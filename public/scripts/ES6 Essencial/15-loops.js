@@ -1,11 +1,11 @@
-// For
+// For verifica todo o array enquanto o index for  < ao valor final
 const array = ["1", "2 ", "3"];
 for (let index = 0; index < array.length; index++) {
   const element = array[index];
   console.log(element);
 }
 
-//  While so comeca a executar se a condicao for true
+//  While so começa a executar se a condição for true
 let n = 0;
 let x = 0;
 

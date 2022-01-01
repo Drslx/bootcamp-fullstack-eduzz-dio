@@ -2,7 +2,7 @@ function fn() {
   function log(value) {
     console.log(value);
   }
-  log("Hoisting da funcao");
+  log("Hoisting da função");
 }
 
 fn();

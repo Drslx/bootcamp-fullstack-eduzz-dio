@@ -16,7 +16,16 @@ body {
   max-width: 900px;
   min-height: 100%;
   margin: 0 auto;
+  padding: 10px;
   border: 1px solid orange;
+  background-color: #fff;
+}
+
+.header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .photo {
