@@ -23,27 +23,31 @@ function firstBlock() {
   }, 1000);
 }
 
-// Funcao lastBlock sera executada primeiro.
+// Funcao lastBlock será executada primeiro.
 function lastBlock() {
   console.log("This is second block");
 }
 
+// function first ira ter atraso de retorno
 firstBlock();
 lastBlock();
 
 // Exemplo 2 Callbacks
 function display(num) {
+  // funcao que ira receber o callback de soma e multi
   console.log("Result:" + num);
 }
 
 function soma(a, b, callback) {
+  // Parametro callback recebe variavel operator
   let operator = a + b;
   callback(operator);
 }
 
-function multi(a, b, cb) {
+function multi(a, b, callback) {
+  // Parametro callback recebe variavel operator
   let operator = a * b;
-  cb(operator);
+  callback(operator);
 }
 // Chamar a Funcao;
 soma(2, 2, display);
@@ -56,3 +60,10 @@ Por exemplo, em vez de uma função old-style que espera dois callbacks, e chama
 
 // Exemplo 1 Promises
 
+function getReq() {
+  new Promise();
+
+  return;
+}
+
+getReq();
